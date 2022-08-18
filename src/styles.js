@@ -8,7 +8,8 @@ export const styles = {
         color: "blue",
         fontSize: 12,
         backgroundColor: "red",
-        border: "1px solid black"
+        border: "1px solid black",
     }
+
   };
   

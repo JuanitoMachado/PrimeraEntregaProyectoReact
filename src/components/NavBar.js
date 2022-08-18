@@ -1,3 +1,4 @@
+import { styles } from "../styles";
 const NavBar = () => {
     return(
         <nav>
@@ -6,8 +7,7 @@ const NavBar = () => {
                 <li style={styles.nav}>LINK 2</li>
                 <li style={styles.nav}>LINK 3</li>
                 <li style={styles.nav}>LINK 4</li>
-
-            </ul>
+           </ul>
         </nav>
 
     )

@@ -13,7 +13,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p style={styles.heading}>
-          ENCONTRA TODO LO QUE NECESTIAS
+          ENCONTRA TODO LO QUE NECESITAS
         </p>
         <p style={styles.heading}>
           EN EL E-COMMERCE DE JUANCITO
