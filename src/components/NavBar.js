@@ -1,17 +1,16 @@
-import { styles } from "../styles";
-const NavBar = () => {
+import '../App.css';
+
+const NavBar = ({menu}) => {
     return(
         <nav>
-            <ul> 
-                <li style={styles.nav}>LINK 1</li>
-                <li style={styles.nav}>LINK 2</li>
-                <li style={styles.nav}>LINK 3</li>
-                <li style={styles.nav}>LINK 4</li>
+            <ul className='nav'> 
+                <li>
+                {menu}
+                </li>
            </ul>
         </nav>
 
     )
-
 
 }
 

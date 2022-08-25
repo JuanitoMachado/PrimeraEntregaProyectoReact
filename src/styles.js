@@ -1,13 +1,8 @@
 export const styles = {
-    heading: {
-      color: "Blue",
-      fontSize: 24,
-      backgroundColor: "Pink"
-    },
     nav: {
-        color: "blue",
-        fontSize: 12,
-        backgroundColor: "red",
+        color: "yellow",
+        fontSize: 14,
+        backgroundColor: "blue",
         border: "1px solid black",
     }
 
