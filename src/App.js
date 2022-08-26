@@ -6,21 +6,28 @@ import Header from './components/Header/Header';
 import CardComponent from './components/CardComponent/CardComponent';
 import NavBar from './components/NavBar';
 import HomeIcon from '@mui/icons-material/Home';
+import CartWidget from './components/CartWidget/CartWitdget';
+import ItemListConteiner from './components/ItemListConteiner/ItemListConteiner';
+
 
 
 const App = () => {
-
   
       return (
       <div>
          <Header/>
-          <div>
-            <NavBar menu='HOME'/>
-            <NavBar menu='NOSOTROS'/>
-            <NavBar menu='NUESTROS PRODUCTOS'/>
-            <NavBar menu='CARRITO'/>
-            <NavBar menu='CONTACTO'/>
-          <div/>
+
+          <div className='Center'>
+          <ItemListConteiner 
+            saludo="HOLA!! BIENVENIDOS!!"
+          />
+          
+          <NavBar menu='HOME'/>
+
+          <CartWidget/>
+
+          </div>
+
           <div className='UserSection'>
             <CardComponent 
               title='Bebidas Alcoholicas' 

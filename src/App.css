@@ -9,6 +9,14 @@ App {
 	margin-bottom: 20px;
 }
 
+.Center {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+	list-style-type: none;
+	color: blue;
+}
+
 .CounterSection {
 	display: flex;
 	flex-direction: column;
