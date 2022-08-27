@@ -1,6 +1,5 @@
 
 import React, { useState } from 'react';
-
 import './App.css';
 import Header from './components/Header/Header';
 import CardComponent from './components/CardComponent/CardComponent';
@@ -12,7 +11,18 @@ import ItemListConteiner from './components/ItemListConteiner/ItemListConteiner'
 
 
 const App = () => {
+
+
+   const [counter, setCounter] = useState(0);
+
+    const handlerCounterUp = () => {
+      setCounter((prevState) => prevState + 1);
+    };
   
+    const handlerCounterDown = () => {
+      setCounter((prevState) => prevState - 1);
+    };
+    
       return (
       <div>
          <Header/>
@@ -28,6 +38,15 @@ const App = () => {
 
           </div>
 
+          <p className='Center'>Contador: {counter}</p>
+
+
+          <div className='Center'>
+					<button onClick={handlerCounterUp}>SUMAR</button>
+					<button disabled = { counter<=0} onClick={handlerCounterDown}>RESTAR</button>
+				  </div>
+
+
           <div className='UserSection'>
             <CardComponent 
               title='Bebidas Alcoholicas' 
@@ -42,6 +61,11 @@ const App = () => {
               description='Variedad de Jugos' 
               img='https://thefoodtech.com/wp-content/uploads/2020/06/jugos-y-n%C3%A9ctares.jpg'/>
           </div>
+
+          <div className='CounterSection'>
+
+			</div>
+
       </div>
     );
 };
