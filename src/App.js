@@ -34,8 +34,6 @@ const App = () => {
           
           <NavBar menu='HOME'/>
 
-          <CartWidget/>
-
           </div>
 
           <p className='Center'>Contador: {counter}</p>
