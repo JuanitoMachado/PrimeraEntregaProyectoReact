@@ -37,6 +37,7 @@ const App = () => {
           </div>
 
           <p className='Center'>Contador: {counter}</p>
+        
 
 
           <div className='Center'>
