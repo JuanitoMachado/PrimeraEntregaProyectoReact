@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import './App.css';
 import Header from './components/Header/Header';
@@ -7,22 +6,10 @@ import NavBar from './components/NavBar';
 import HomeIcon from '@mui/icons-material/Home';
 import CartWidget from './components/CartWidget/CartWitdget';
 import ItemListConteiner from './components/ItemListConteiner/ItemListConteiner';
-
+import ItemCounter from './components/ItemCounter/ItemCounter';
 
 
 const App = () => {
-
-
-   const [counter, setCounter] = useState(0);
-
-    const handlerCounterUp = () => {
-      setCounter((prevState) => prevState + 1);
-    };
-  
-    const handlerCounterDown = () => {
-      setCounter((prevState) => prevState - 1);
-    };
-    
       return (
       <div>
          <Header/>
@@ -31,20 +18,11 @@ const App = () => {
           <ItemListConteiner 
             saludo="HOLA!! BIENVENIDOS!!"
           />
-          
           <NavBar menu='HOME'/>
 
+          <ItemCounter/>
+
           </div>
-
-          <p className='Center'>Contador: {counter}</p>
-        
-
-
-          <div className='Center'>
-					<button onClick={handlerCounterUp}>SUMAR</button>
-					<button disabled = { counter<=0} onClick={handlerCounterDown}>RESTAR</button>
-				  </div>
-
 
           <div className='UserSection'>
             <CardComponent 
@@ -61,11 +39,7 @@ const App = () => {
               img='https://thefoodtech.com/wp-content/uploads/2020/06/jugos-y-n%C3%A9ctares.jpg'/>
           </div>
 
-          <div className='CounterSection'>
-
-			</div>
-
-      </div>
+          </div>
     );
 };
 

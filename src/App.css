@@ -39,12 +39,3 @@ App {
 	background-color: aquamarine;
 	color: black;
 }
-.nav: {
-  color: "yellow";
-  font-size: 24px;
-  background-color: "blue";
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  border: "1px solid black",
-}
