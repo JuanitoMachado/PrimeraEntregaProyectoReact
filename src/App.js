@@ -12,17 +12,16 @@ import ItemCounter from './components/ItemCounter/ItemCounter';
 const App = () => {
       return (
       <div>
-         <Header/>
+         <Header className='Center'/>
 
           <div className='Center'>
-          <ItemListConteiner 
-            saludo="HOLA!! BIENVENIDOS!!"
-          />
           <NavBar menu='HOME'/>
-
           <ItemCounter/>
 
+          <ItemListConteiner/> 
+
           </div>
+
 
           <div className='UserSection'>
             <CardComponent 
@@ -38,8 +37,8 @@ const App = () => {
               description='Variedad de Jugos' 
               img='https://thefoodtech.com/wp-content/uploads/2020/06/jugos-y-n%C3%A9ctares.jpg'/>
           </div>
-
-          </div>
+       </div>
+          
     );
 };
 
