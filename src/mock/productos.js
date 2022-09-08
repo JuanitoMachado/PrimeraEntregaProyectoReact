@@ -1,4 +1,4 @@
-export const products = [
+export const productos = [
     {
         title: "Fernet Branca",
         price: 1500,
@@ -13,17 +13,26 @@ export const products = [
         price: 1000,
         id:2,
         stock: 10,
-        description: "Aperitivo demasiado dulce igual para cortar con un chorro de soda",
+        description: "Aperitivo demasiado dulce ideal para cortar con un chorro de soda",
         img:"https://statics.dinoonline.com.ar/imagenes/full_600x600_ma/3070148_f.jpg",
     
     },
     {
-        title: "COCA COLA",
+        title: "VODKA",
         price: 1000,
         id:3,
         stock: 20,
-        description: "GASEOSA COLA COLA, LA PAREJITA DEL FERNET",
-        img:"https://statics.dinoonline.com.ar/imagenes/full_600x600_ma/3080015_f.jpg",
+        description: "FUERTE EL RUSO EHHH",
+        img:"https://statics.dinoonline.com.ar/imagenes/full_600x600_ma/3070095_f.jpg",
+    
+    },
+    {
+        title: "TEQUILA",
+        price: 1000,
+        id:4,
+        stock: 20,
+        description: "PEGA MAS QUE EL CHAPULIN COLORADO",
+        img:"https://statics.dinoonline.com.ar/imagenes/full_600x600_ma/3070147_f.jpg",
     
     },
 

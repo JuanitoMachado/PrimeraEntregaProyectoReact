@@ -1,26 +1,41 @@
 import React, { useEffect, useState } from "react";
-import { products } from "../../mock/products";
-import ItemList from "../ItemList/ItemList";
+import { productos } from "../../mock/productos";
+import { Link } from 'react-router-dom';
+import axios from 'axios';
+import CardComponent from "../CardComponent/CardComponent";
 
 
 const ItemListConteiner = (props) => {
 
 	const [productList, setproductList] = useState ([])
 
-	const getProducts = () => new Promise((resolve, reject) => {
-		setTimeout (()=> resolve(products), 2000)
+	const getProductos = () => new Promise((resolve, reject) => {
+		setTimeout (()=> resolve(productos), 2000)
 	})
 
-	useEffect (() => {
-		getProducts()
-		.then(products => setproductList(products))
-		.catch (error => console.error(error))
-		
-	} ,[])
-	
-	console.log(productList)
+	useEffect(() => {
+		axios(productList).then((res) =>
+			setproductList(res.productos)
+		);
+	}, []);
+
+
 		return (
-			<ItemList productList={productList}/>
+
+			<div>
+			{productList.map((prod) => {
+				return (
+					<div key={prod.char_id}>
+						<Link to={`/detail/${prod.id}`} className='Link'>
+							<CardComponent productos={prod} />
+						</Link>
+					</div>
+				);
+			})}
+		</div>
+
+
+
         )
 }
 

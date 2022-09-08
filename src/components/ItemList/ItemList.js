@@ -11,7 +11,7 @@ const ItemList = ({productList}) => {
     return (
     <div style={{display: 'flex'}}>
         {
-            productList.map(item => <CardComponent key= {item.id} img={item.img} title={item.title} description={item.description} price={item.price}/>)
+            productList.map(item => <CardComponent key= {item.id} img={item.img} title={item.title} description={item.description} price= {item.price}/>)
         }
         </div>
   )

@@ -27,8 +27,6 @@ const CardComponent = ({ title, description, img, price, stock})  => {
           <Typography variant="body2" color="text.secondary">
             {stock}
           </Typography>
-
-
         </CardContent>
       </CardActionArea>
     </Card>
